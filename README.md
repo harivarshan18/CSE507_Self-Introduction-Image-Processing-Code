@@ -1,4 +1,4 @@
-This repository contains the code and supporting materials for my CSE 507 self-introduction assignment. It demonstrates a simple image processing pipeline implemented in Python using PyTorch. The pipeline takes an original photograph, resizes and optionally flips it, sharpens edges using an unsharp mask, converts to grayscale, detects edges with the Sobel operator, thresholds the gradient magnitude to produce a binary edge map, and saves the processed image.
+This repository contains the code and supporting materials for my CSE 507 Image processing self-introduction assignment. It demonstrates a simple image processing pipeline implemented in Python using PyTorch. The pipeline takes an original photograph, resizes and flips it, sharpens edges using an unsharp mask, converts to grayscale, detects edges with the Sobel operator, thresholds the gradient magnitude to produce a binary edge map, and saves the processed image.
 
 The repository includes:
 
