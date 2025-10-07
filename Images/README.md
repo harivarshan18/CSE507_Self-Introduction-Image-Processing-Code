@@ -21,7 +21,7 @@ Each input file must contain exactly two lines:
 - Line 1: the text t
 - Line 2: the pattern p
 
-Example: \\
+Example: //
 ATATTGATGATATG... \\
 ATTGATGATA \\
 
