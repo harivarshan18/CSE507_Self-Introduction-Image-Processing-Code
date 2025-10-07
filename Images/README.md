@@ -40,15 +40,15 @@ Number of matches: 522
 Number of mismatches: 1357
 
 ### How to run
-Print to stdout
+#### Print to stdout
 python exact_pattern_matching.py <input_file>
 
 Example: python zmatch.py samples/sample_0
 
-Redirect to a file if needed:
+#### Redirect to a file if needed:
 python exact_pattern_matching.py samples/sample_0 > sol_0
 
-Write directly to an output file
+#### Write directly to an output file
 python exact_pattern_matching.py <input_file> <output_file>
 
 Example:
