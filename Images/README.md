@@ -21,49 +21,40 @@ Each input file must contain exactly two lines:
 - Line 1: the text t
 - Line 2: the pattern p
 
-Example:
-ATATTGATGATATG...
-ATTGATGATA
+Example: \\
+ATATTGATGATATG... \\
+ATTGATGATA \\
 
 ### Output format
 - One line per match position (1-based indices into t)
 - Then the three tallies, each on its own line
 
-Example:
-3
-166
-538
-688
-1111
-Number of comparisons: 1879
-Number of matches: 522
-Number of mismatches: 1357
+Example: \\
+3 \\
+166 \\
+538 \\
+688 \\
+1111 \\
+Number of comparisons: 1879 \\
+Number of matches: 522 \\
+Number of mismatches: 1357 \\
 
 ### How to run
 #### Print to stdout
-python exact_pattern_matching.py <input_file>
+- python exact_pattern_matching.py <input_file>
 
 Example: python zmatch.py samples/sample_0
 
 #### Redirect to a file if needed:
-python exact_pattern_matching.py samples/sample_0 > sol_0
+- python exact_pattern_matching.py samples/sample_0 > sol_0
 
 #### Write directly to an output file
-python exact_pattern_matching.py <input_file> <output_file>
+- python exact_pattern_matching.py <input_file> <output_file>
 
-Example:
+Example: \\
 python exact_pattern_matching.py samples/sample_0 sol_0
 
 The program does not create any directories, therefore the path to <output_file> must exist.
-
-### Batch over many samples
-From a shell inside the directory that contains samples/:
-
-for f in samples/sample_*; do
-  base=$(basename "$f")
-  out="sol_${base#sample_}"
-  python zmatch.py "$f" "$out"
-done
 
 ### Notes on correctness
 - Positions are 1-based: first character of t is position 1; last is position |t|.
