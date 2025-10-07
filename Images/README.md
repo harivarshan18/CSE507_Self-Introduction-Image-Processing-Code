@@ -21,23 +21,23 @@ Each input file must contain exactly two lines:
 - Line 1: the text t
 - Line 2: the pattern p
 
-Example: //
-ATATTGATGATATG... \\
-ATTGATGATA \\
+Example: 
+- ATATTGATGATATG... 
+- ATTGATGATA 
 
 ### Output format
 - One line per match position (1-based indices into t)
 - Then the three tallies, each on its own line
 
-Example: \\
-3 \\
-166 \\
-538 \\
-688 \\
-1111 \\
-Number of comparisons: 1879 \\
-Number of matches: 522 \\
-Number of mismatches: 1357 \\
+Example: 
+- 3 
+- 166 
+- 538 
+- 688 
+- 1111 
+- Number of comparisons: 1879 
+- Number of matches: 522 
+- Number of mismatches: 1357 
 
 ### How to run
 #### Print to stdout
